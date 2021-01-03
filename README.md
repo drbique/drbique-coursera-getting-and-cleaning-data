@@ -9,6 +9,14 @@ Here are the data for the project:
  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zi  
 
 Files:
+        
+                        
+  CodeBook.md       code book that modifies and updates the available codebooks with 
+                      the data to indicate all the variables and summaries calculated,
+                      along with units, and any other relevant information.
+                      
+  README.md         explains the analysis files
+
   run_analysis.R    R script that does the following.:
                       Merges the training and the test sets to create one data set.
                       Extracts only the measurements on the mean and standard  
@@ -20,8 +28,4 @@ Files:
                       From the data set in step 4, creates a second, independent tidy 
                         data set with the average of each variable for each activity 
                         and each subject.
-                        
-                        
-  CodeBook.md       code book that modifies and updates the available codebooks with 
-                      the data to indicate all the variables and summaries calculated,
-                      along with units, and any other relevant information.
+                
