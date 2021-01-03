@@ -25,7 +25,7 @@ y_train <- read.table("UCI HAR Dataset/train/y_train.txt", col.names = "code")
 S <- rbind(subject_train, subject_test)
 X <- rbind(x_train, x_test)
 Y <- rbind(y_train, y_test)
-merged_dataset <- cbind(S, Y, X)
+merged_dataset <- cbind(S, X, Y)
 
 # Step 2: Extracts only the measurements on the mean and standard deviation for each measurement.
 mean_and_sd_data <- merged_dataset %>% select(subject, code, contains("mean"), contains("std"))
