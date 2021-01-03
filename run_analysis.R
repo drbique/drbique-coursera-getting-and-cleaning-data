@@ -31,7 +31,7 @@ merged_dataset <- cbind(S, Y, X)
 mean_and_sd_data <- merged_dataset %>% select(subject, code, contains("mean"), contains("std"))
 
 # Step 3: Uses descriptive activity names to name the activities in the data set
-mean_and_sd_data$code <- activities[mean_and_sd_data$code, 2]
+mean_and_sd_data$code <- activity_labels[mean_and_sd_data$code, 2]
 
 # Step 4:Appropriately labels the data set with descriptive variable names. 
 names(mean_and_sd_data)[2] = "activity"
